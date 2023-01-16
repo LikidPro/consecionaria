@@ -24,5 +24,6 @@ public class productos {
     private int año;
     private boolean camaraReversa;
 
-
+    public productos() {
+    }
 }

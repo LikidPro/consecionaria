@@ -18,6 +18,9 @@ public class exterior {
     private int altoDeCaja;
     private  int anchoDeCaja;
 
+    public exterior() {
+    }
+
     public exterior(String neumaticos, boolean ruedaAuxilio, boolean poralizado, boolean espejosColorDelAuto, int altoDeCaja, int anchoDeCaja) {
         this.neumaticos = neumaticos;
         this.ruedaAuxilio = ruedaAuxilio;

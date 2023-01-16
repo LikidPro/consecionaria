@@ -22,6 +22,9 @@ public class técnico {
     private int velocidades;
     private int valvulas;
 
+    public técnico() {
+    }
+
     public técnico(int pasajeros, int tanqueCombustible, int puertas, int cilindros, String motor, int peso, Concesionaria.concesionaria.modelos.tracción tracción, int velocidades, int valvulas) {
         this.pasajeros = pasajeros;
         this.tanqueCombustible = tanqueCombustible;
