@@ -15,7 +15,14 @@ public class productos {
     private long id;
 
     private String marca;
-    private int modelo;
+    private String modelo;
+    private String tipoMotor;
+    private String cilindrada;
+    private int puertas;
+    private int velocidades;
+    private int airbags;
+    private int año;
+    private boolean camaraReversa;
 
 
 }
