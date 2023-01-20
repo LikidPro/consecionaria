@@ -20,6 +20,7 @@ public class Técnico {
     private int velocidades;
     private int valvulas;
     @OneToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "producto_id")
     private Producto producto;
 
     public Técnico() {

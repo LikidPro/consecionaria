@@ -16,6 +16,7 @@ public class Exterior {
     private int altoDeCaja;
     private  int anchoDeCaja;
     @OneToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "producto_id")
     private Producto producto;
 
     public Exterior() {

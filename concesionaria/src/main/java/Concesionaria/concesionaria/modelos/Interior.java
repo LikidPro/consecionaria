@@ -18,6 +18,7 @@ public class Interior {
     private boolean calefaccion;
     private boolean aireAcondicionado;
     @OneToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "producto_id")
     private Producto producto;
 
     public Interior() {

@@ -7,6 +7,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 public class ProductoUsado {
@@ -17,7 +18,7 @@ public class ProductoUsado {
      private String marca, modelo, descripcion, color;
      private long kilometros;
      private int año;
-     private ArrayList fotos;
+     private List<String> fotos = new ArrayList<>();
      private EstadoDeUsado estado;
 
     public ProductoUsado() {
@@ -86,11 +87,12 @@ public class ProductoUsado {
         this.año = año;
     }
 
-    public ArrayList getFotos() {
+
+    public List<String> getFotos() {
         return fotos;
     }
 
-    public void setFotos(ArrayList fotos) {
+    public void setFotos(List<String> fotos) {
         this.fotos = fotos;
     }
 

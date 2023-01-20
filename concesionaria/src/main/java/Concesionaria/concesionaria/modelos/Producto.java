@@ -3,6 +3,7 @@ package Concesionaria.concesionaria.modelos;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -24,8 +25,12 @@ public class Producto {
 
     @ElementCollection
     @Column (name = "links_fotos", length = 2000)
-    @OneToOne(mappedBy = "color")
-    private List<String> fotos1, fotos2, fotos3, fotos4;
+    private List<String> fotos1 = new ArrayList<>();
+
+    private List<String> fotos2 = new ArrayList<>();
+    private List<String> fotos3 = new ArrayList<>();
+    private List<String> fotos4 = new ArrayList<>();
+
 
     @OneToOne(mappedBy = "producto", fetch = FetchType.EAGER)
     private Interior interior;
