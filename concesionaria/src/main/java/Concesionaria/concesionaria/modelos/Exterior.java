@@ -6,7 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-public class exterior {
+public class Exterior {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name="native", strategy = "native")
@@ -18,10 +18,10 @@ public class exterior {
     private int altoDeCaja;
     private  int anchoDeCaja;
 
-    public exterior() {
+    public Exterior() {
     }
 
-    public exterior(String neumaticos, boolean ruedaAuxilio, boolean poralizado, boolean espejosColorDelAuto, int altoDeCaja, int anchoDeCaja) {
+    public Exterior(String neumaticos, boolean ruedaAuxilio, boolean poralizado, boolean espejosColorDelAuto, int altoDeCaja, int anchoDeCaja) {
         this.neumaticos = neumaticos;
         this.ruedaAuxilio = ruedaAuxilio;
         this.poralizado = poralizado;

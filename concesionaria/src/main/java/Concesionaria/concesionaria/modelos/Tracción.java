@@ -1,6 +1,6 @@
 package Concesionaria.concesionaria.modelos;
 
-public enum tracción {
+public enum Tracción {
     DELANTERA,
     TRASERA,
     DOBLE

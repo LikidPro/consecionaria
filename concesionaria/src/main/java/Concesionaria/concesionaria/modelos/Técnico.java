@@ -6,7 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-public class técnico {
+public class Técnico {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name="native", strategy = "native")
@@ -18,14 +18,14 @@ public class técnico {
     private int cilindros;
     private String motor;
     private int peso;
-    private tracción tracción;
+    private Tracción tracción;
     private int velocidades;
     private int valvulas;
 
-    public técnico() {
+    public Técnico() {
     }
 
-    public técnico(int pasajeros, int tanqueCombustible, int puertas, int cilindros, String motor, int peso, Concesionaria.concesionaria.modelos.tracción tracción, int velocidades, int valvulas) {
+    public Técnico(int pasajeros, int tanqueCombustible, int puertas, int cilindros, String motor, int peso, Tracción tracción, int velocidades, int valvulas) {
         this.pasajeros = pasajeros;
         this.tanqueCombustible = tanqueCombustible;
         this.puertas = puertas;
@@ -90,11 +90,11 @@ public class técnico {
         this.peso = peso;
     }
 
-    public Concesionaria.concesionaria.modelos.tracción getTracción() {
+    public Tracción getTracción() {
         return tracción;
     }
 
-    public void setTracción(Concesionaria.concesionaria.modelos.tracción tracción) {
+    public void setTracción(Tracción tracción) {
         this.tracción = tracción;
     }
 

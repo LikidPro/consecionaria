@@ -2,13 +2,11 @@ package Concesionaria.concesionaria.modelos;
 
 import org.hibernate.annotations.GenericGenerator;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.List;
 
 @Entity
-public class productos {
+public class Productos {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name="native", strategy = "native")
@@ -24,6 +22,11 @@ public class productos {
     private int año;
     private boolean camaraReversa;
 
-    public productos() {
+    @ElementCollection
+    @Column (name = "links_fotos", length = 2000)
+    @OneToOne(mappedBy = "color")
+    private List<String> fotos1, fotos2, fotos3, fotos4;
+
+    public Productos() {
     }
 }

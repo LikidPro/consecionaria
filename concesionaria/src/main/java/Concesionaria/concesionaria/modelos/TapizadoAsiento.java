@@ -1,6 +1,6 @@
 package Concesionaria.concesionaria.modelos;
 
-public enum tapizadoAsiento {
+public enum TapizadoAsiento {
     TELA,
     CUERO
 }
