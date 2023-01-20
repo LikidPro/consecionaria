@@ -2,16 +2,14 @@ package Concesionaria.concesionaria.modelos;
 
 import org.hibernate.annotations.GenericGenerator;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
-public class interior {
+public class Interior {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name="native", strategy = "native")
     private long id;
-    private tapizadoAsiento tapizadoAsiento;
+    private TapizadoAsiento tapizadoAsiento;
     private boolean levantaVidrioElectricoDelantero;
     private boolean levantaVidrioElectricoTrasero;
     private boolean trabaParaNiños;
@@ -19,11 +17,14 @@ public class interior {
     private boolean radio;
     private boolean calefaccion;
     private boolean aireAcondicionado;
+    @OneToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "producto_id")
+    private Producto producto;
 
-    public interior() {
+    public Interior() {
     }
 
-    public interior(Concesionaria.concesionaria.modelos.tapizadoAsiento tapizadoAsiento, boolean levantaVidrioElectricoDelantero, boolean levantaVidrioElectricoTrasero, boolean trabaParaNiños, boolean luzInterior, boolean radio, boolean calefaccion, boolean aireAcondicionado) {
+    public Interior(TapizadoAsiento tapizadoAsiento, boolean levantaVidrioElectricoDelantero, boolean levantaVidrioElectricoTrasero, boolean trabaParaNiños, boolean luzInterior, boolean radio, boolean calefaccion, boolean aireAcondicionado) {
         this.tapizadoAsiento = tapizadoAsiento;
         this.levantaVidrioElectricoDelantero = levantaVidrioElectricoDelantero;
         this.levantaVidrioElectricoTrasero = levantaVidrioElectricoTrasero;
@@ -38,11 +39,11 @@ public class interior {
         return id;
     }
 
-    public Concesionaria.concesionaria.modelos.tapizadoAsiento getTapizadoAsiento() {
+    public TapizadoAsiento getTapizadoAsiento() {
         return tapizadoAsiento;
     }
 
-    public void setTapizadoAsiento(Concesionaria.concesionaria.modelos.tapizadoAsiento tapizadoAsiento) {
+    public void setTapizadoAsiento(TapizadoAsiento tapizadoAsiento) {
         this.tapizadoAsiento = tapizadoAsiento;
     }
 
@@ -100,5 +101,13 @@ public class interior {
 
     public void setAireAcondicionado(boolean aireAcondicionado) {
         this.aireAcondicionado = aireAcondicionado;
+    }
+
+    public Producto getProducto() {
+        return producto;
+    }
+
+    public void setProducto(Producto producto) {
+        this.producto = producto;
     }
 }

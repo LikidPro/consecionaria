@@ -2,11 +2,9 @@ package Concesionaria.concesionaria.modelos;
 
 import org.hibernate.annotations.GenericGenerator;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
-public class exterior {
+public class Exterior {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name="native", strategy = "native")
@@ -17,11 +15,14 @@ public class exterior {
     private boolean espejosColorDelAuto;
     private int altoDeCaja;
     private  int anchoDeCaja;
+    @OneToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "producto_id")
+    private Producto producto;
 
-    public exterior() {
+    public Exterior() {
     }
 
-    public exterior(String neumaticos, boolean ruedaAuxilio, boolean poralizado, boolean espejosColorDelAuto, int altoDeCaja, int anchoDeCaja) {
+    public Exterior(String neumaticos, boolean ruedaAuxilio, boolean poralizado, boolean espejosColorDelAuto, int altoDeCaja, int anchoDeCaja) {
         this.neumaticos = neumaticos;
         this.ruedaAuxilio = ruedaAuxilio;
         this.poralizado = poralizado;
@@ -80,5 +81,13 @@ public class exterior {
 
     public void setAnchoDeCaja(int anchoDeCaja) {
         this.anchoDeCaja = anchoDeCaja;
+    }
+
+    public Producto getProducto() {
+        return producto;
+    }
+
+    public void setProducto(Producto producto) {
+        this.producto = producto;
     }
 }
