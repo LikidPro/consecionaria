@@ -1,6 +1,6 @@
 package Concesionaria.concesionaria.modelos;
 
-public enum EstadoDeUsados {
+public enum EstadoDeUsado {
     EXELENTE,
     BUENO,
     REGULAR,

@@ -9,7 +9,7 @@ import javax.persistence.Id;
 import java.util.ArrayList;
 
 @Entity
-public class ProductosUsados {
+public class ProductoUsado {
      @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name="native", strategy = "native")
@@ -18,12 +18,12 @@ public class ProductosUsados {
      private long kilometros;
      private int año;
      private ArrayList fotos;
-     private EstadoDeUsados estado;
+     private EstadoDeUsado estado;
 
-    public ProductosUsados() {
+    public ProductoUsado() {
     }
 
-    public ProductosUsados(String marca, String modelo, String descripcion, String color, long kilometros, int año, ArrayList fotos, EstadoDeUsados estado) {
+    public ProductoUsado(String marca, String modelo, String descripcion, String color, long kilometros, int año, ArrayList fotos, EstadoDeUsado estado) {
         this.marca = marca;
         this.modelo = modelo;
         this.descripcion = descripcion;
@@ -94,11 +94,11 @@ public class ProductosUsados {
         this.fotos = fotos;
     }
 
-    public EstadoDeUsados getEstado() {
+    public EstadoDeUsado getEstado() {
         return estado;
     }
 
-    public void setEstado(EstadoDeUsados estado) {
+    public void setEstado(EstadoDeUsado estado) {
         this.estado = estado;
     }
 }

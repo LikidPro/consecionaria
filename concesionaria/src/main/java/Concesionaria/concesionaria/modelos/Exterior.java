@@ -2,9 +2,7 @@ package Concesionaria.concesionaria.modelos;
 
 import org.hibernate.annotations.GenericGenerator;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 public class Exterior {
     @Id
@@ -17,6 +15,8 @@ public class Exterior {
     private boolean espejosColorDelAuto;
     private int altoDeCaja;
     private  int anchoDeCaja;
+    @OneToOne(fetch = FetchType.EAGER)
+    private Producto producto;
 
     public Exterior() {
     }
@@ -80,5 +80,13 @@ public class Exterior {
 
     public void setAnchoDeCaja(int anchoDeCaja) {
         this.anchoDeCaja = anchoDeCaja;
+    }
+
+    public Producto getProducto() {
+        return producto;
+    }
+
+    public void setProducto(Producto producto) {
+        this.producto = producto;
     }
 }

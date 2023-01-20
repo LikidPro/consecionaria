@@ -2,9 +2,7 @@ package Concesionaria.concesionaria.modelos;
 
 import org.hibernate.annotations.GenericGenerator;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 public class Interior {
     @Id
@@ -19,6 +17,8 @@ public class Interior {
     private boolean radio;
     private boolean calefaccion;
     private boolean aireAcondicionado;
+    @OneToOne(fetch = FetchType.EAGER)
+    private Producto producto;
 
     public Interior() {
     }
@@ -100,5 +100,13 @@ public class Interior {
 
     public void setAireAcondicionado(boolean aireAcondicionado) {
         this.aireAcondicionado = aireAcondicionado;
+    }
+
+    public Producto getProducto() {
+        return producto;
+    }
+
+    public void setProducto(Producto producto) {
+        this.producto = producto;
     }
 }

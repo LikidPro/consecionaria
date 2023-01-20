@@ -2,9 +2,7 @@ package Concesionaria.concesionaria.modelos;
 
 import org.hibernate.annotations.GenericGenerator;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 public class Técnico {
     @Id
@@ -21,6 +19,8 @@ public class Técnico {
     private Tracción tracción;
     private int velocidades;
     private int valvulas;
+    @OneToOne(fetch = FetchType.EAGER)
+    private Producto producto;
 
     public Técnico() {
     }
@@ -112,5 +112,13 @@ public class Técnico {
 
     public void setValvulas(int valvulas) {
         this.valvulas = valvulas;
+    }
+
+    public Producto getProducto() {
+        return producto;
+    }
+
+    public void setProducto(Producto producto) {
+        this.producto = producto;
     }
 }
