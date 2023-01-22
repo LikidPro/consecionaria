@@ -31,7 +31,7 @@ public class Producto {
     private List<String> fotos3 = new ArrayList<>();
     private List<String> fotos4 = new ArrayList<>();
 
-
+//error
     @OneToOne(mappedBy = "producto", fetch = FetchType.EAGER)
     private Interior interior;
     @OneToOne(mappedBy = "producto", fetch = FetchType.EAGER)
