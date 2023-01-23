@@ -16,7 +16,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark  fixed-top pt-3">
             <img class="logo-empresa" src="./assets/Img/logo.png" alt="">
         
-            <button class="navbar-toggler animate__animated animate__heartBeat border border-2" type="button"
+            <button class="navbar-toggler animate__animated animate__heartBeat border border-2 me-3" type="button"
                 data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
                 aria-controls="offcanvasDarkNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -105,16 +105,42 @@
     
     <main>
         <div class="btn-config">
-            <div>
-                <div class="btn-con-link"><a style="outline: none;" href="#" data-toggle="modal" data-show="true" data-target="#WhatsappModal" data-remote-target="#WhatsappModal .modal-body" tabindex="0"><img src="https://www.saumavw.com/_red/_vw/_images/ic-loc.png"> <span>Nuestro Whatsapp</span></a></div>
+            <div class="div-links-sticky">
+                <div class="btn-con-link"><a class="sticky-nav" style="outline: none;" href="#" data-toggle="modal" data-show="true" data-target="#WhatsappModal" data-remote-target="#WhatsappModal .modal-body" tabindex="0"><img src="https://www.saumavw.com/_red/_vw/_images/ic-loc.png"> <span class="texto-sticky">Nuestro Whatsapp</span></a></div>
                 <!-- <div class="btn-con-link"><a href="/contacto/asesor" tabindex="0"><img src="https://www.saumavw.com/_red/_vw/_images/ic-as.png"> <span>Solicitar un Asesor</span> </a></div> -->
-                <div class="btn-con-link"><a href="#mapa" tabindex="0"><img src="https://www.saumavw.com/_red/_vw/_images/ic-dri.png"> <span>Dónde encontrarnos</span></a></div>
+                <div class="btn-con-link"><a class="sticky-nav" href="#mapa" tabindex="0"><img src="https://www.saumavw.com/_red/_vw/_images/ic-dri.png"> <span class="texto-sticky">Dónde encontrarnos</span></a></div>
             </div>
         </div>
         <section id="seccion-uno">
-            <a href="" id="circulo-uno"  class="div-seccion-uno"></a>
-            <a href="" id="circulo-dos" class="div-seccion-uno"></a>
-            <a href="" id="circulo-tres" class="div-seccion-uno"></a>
+          <div id="contenedor-circulo-uno" class="contenedor-circulos">
+
+            <a href="" id="circulo-uno"  class="div-seccion-uno" ><div class="texto-circulo-seccion-uno"></div>
+               <div class="links-paginas-circulo">
+              
+              <p >Planes de pago ajustables</p>
+            </div> 
+          </a>
+          </div>
+          <div class="contenedor-circulos "id="contenedor-circulo-dos">
+
+            <a href="" id="circulo-dos" class="div-seccion-uno"><div class="texto-circulo-seccion-uno"></div>
+              <div class="links-paginas-circulo">
+              
+                <p >Llevate tu 0KM</p>
+              </div> 
+            </a>
+          </div>
+          </div> 
+            <div id="contenedor-circulo-tres" class="contenedor-circulos">
+
+              <a href="" id="circulo-tres" class="div-seccion-uno"><div class="texto-circulo-seccion-uno"></div>
+                <div class="links-paginas-circulo">
+                
+                  <p >Los mejores autos usados</p>
+                </div> 
+              </a>
+            </div>
+          </div> 
         </section>
         
         <section id="seccion-dos">
@@ -316,11 +342,12 @@
         <div class="datos-creadores">
           <a class="nuestras-redes text-white">Diseño web</a>
           <a class="nuestras-redes borde-derecho" href="https://davidgarciaportfolio.netlify.app/">David Garcia</a>
-          <a class="nuestras-redes" href="https://www.linkedin.com/in/alfredo-cerrezuela-3a2283240/">Alfredo Cerresuela</a>
+          <a class="nuestras-redes" href="https://www.linkedin.com/in/alfredo-cerrezuela-3a2283240/">Alfredo Cerrezuela</a>
 
         </div>
 
       </div>
+      <div class="espacio-footer"></div>
 
     </footer>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
