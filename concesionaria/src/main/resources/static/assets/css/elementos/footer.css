@@ -1,0 +1,299 @@
+footer{
+    min-height: 30vh;
+    background-color: black;
+    display: flex;
+   justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+   
+ 
+  }
+  .espacio-footer{
+    display: none;
+  }
+ 
+    .contenedor-footer {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    min-height: 20vh;
+    width: 60%;
+}
+  .mapa{
+  
+    margin-left: 10rem;
+    min-height: 60%;
+    width: 25%;
+  }
+  .mapa-tamaño{
+    height: 100%;
+    width: 100%;
+  }
+  h6{
+    color: rgb(173, 166, 166);
+  }
+  .icono-ubicacion{
+    display: flex;
+    justify-content: center;
+ 
+    height: 60%;
+    width: 25%;
+
+  }
+  .icono-ubicacion-tamaño{
+    height: 100%;
+    width: 60%;
+  }
+  .contenedor-datos-footer{
+    height: 70%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+  }
+
+  .contenedor-datos-footer p{
+    color:rgb(147, 147, 147) ;
+  }
+  .contenedor-datos-footer h5{
+    font-weight: bolder;
+    color: rgb(255, 255, 255);  }
+    .contenedor-footer-logos{
+      height: 9vh;
+      width: 1900px;
+      border-top: solid white 1px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .logo-footer{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 40%;
+      height: 100%;
+    }
+    .logo-en-footer{
+      width: 20%;
+      height:70% ;
+      padding-right: 20px;
+      margin-top: 10px;
+      border-right: 2px white solid;
+    }
+    .iconos-redes{
+      display: flex;
+      align-items: center;
+      height: 100%;
+      width: 30%;
+      justify-content: center;
+      margin-left: 2rem;
+    }
+    .link-redes{
+      width: 30%;
+  
+      z-index: 5;
+    }
+    .link-redes:hover{
+      transform: scale(1.2);
+      
+    }
+    .link-redes img{
+      width: 100%;
+      max-height: 30%;
+      border: none;
+    }
+    #icono-face{
+      width: 85%;
+    }
+    .datos-creadores{
+      width: 40%;
+      
+      display: flex;
+      justify-content: flex-end;
+      gap: 1rem;
+      align-items: center;
+     
+    }
+    .nuestras-redes{
+      text-decoration: none;
+      margin: none;
+      padding: none;
+      text-align: center;
+      color: #303030;
+      z-index: 5;
+      font-size: 1.5rem;
+    }
+    .nuestras-redes:hover{
+      color: white;
+    }
+    .borde-derecho{
+      border-right: 1px solid white ;
+      padding-right: 15px;
+    }
+    @media screen and (max-width:1980px){
+      .contenedor-footer-logos{
+        width: 90%;
+      
+      }
+    }
+    @media screen and (max-width:1630px){
+      .contenedor-footer {
+   
+   
+        width: 60%;
+    }
+      .contenedor-footer-logos{
+        width: 100%;
+        padding-right: 10px;
+        padding-left: 10px;
+        
+        
+      }
+    }
+    @media screen and (max-width:1360px){
+      .contenedor-datos-footer{
+        width: 80%;
+      }
+      .mapa{
+        width: 100%;
+      }
+      .contenedor-footer-logos{
+       height: 13vh;
+        
+      }
+      .iconos-redes{
+        width: 40%;
+  
+      }
+      .link-redes{
+        width: 100%;
+      }
+    }
+    @media screen and (max-width:1200px){
+      .contenedor-footer {
+        width: 80%;
+    }
+    }
+    @media screen and (max-width:1000px){
+      .iconos-redes{
+      justify-content: flex-start;
+      margin-left: .2rem;
+  
+      }
+    
+      .logo-footer{
+        gap: 10px;
+      }
+      .link-redes{
+        width: 50px;
+      }
+    }
+    @media screen and (max-width:990px){
+      .contenedor-footer-logos{
+        flex-direction: column;
+        align-items: center;
+        height: 15vh;
+        padding-bottom: 10px;
+        
+    } 
+    .logo-footer{
+      width: 60%;
+    /*   border: solid .1rem red; */
+     display: flex;
+     justify-content: center;
+     
+  
+    }
+    .iconos-redes{
+      width: 20%;
+    }
+    .datos-creadores{
+      width: 60%;
+    }
+    .contenedor-footer{
+      width: 90%;
+    }
+    .contenedor-datos-footer{
+      width: 50%;
+    }
+    .mapa{
+      width: 50%;
+     
+    }
+    .mapa-tamaño{
+      width: 100% 
+    }
+  
+    }
+    @media screen and (max-width:800px){
+      .contenedor-footer{
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        margin-bottom: 1rem;
+      }
+      .mapa{
+        width: 80%;
+        margin: 0;
+        height: 25vh;
+       
+      }
+      .contenedor-datos-footer{
+        align-items: center;
+        width: 100%;
+      
+    
+      }
+      .espacio-footer{
+        display: block;
+        width: 100%;
+        height: 5vh;
+      
+      
+       }
+       .logo-footer{
+       padding-top: 10px;
+       }
+    }
+    @media screen and (max-width:650px){
+      .contenedor-footer-logos{
+        align-items: flex-end;
+       
+      }
+      .logo-footer{
+       width: 80%;
+      }
+      .datos-creadores{
+        width: 70%;
+      }
+    }
+    @media screen and (max-width:580px){
+      .contenedor-footer-logos{
+        width: 100%;
+        align-items: center;
+      }
+      .espacio-footer{
+   
+        height: 20vh;
+      }
+      .contenedor-footer-logos{
+        width: 100%;
+      }
+      .datos-creadores{
+        width: 100%;
+      }
+    }
+    @media screen and (max-width:420px){
+      .link-redes img{
+        width: 40px ;
+      }
+      #icono-face{
+        width: 35px;
+      }
+    }
+    @media screen and (max-width:320px){
+      .espacio-footer{  
+        height: 30vh;     
+       }
+     }

@@ -1,0 +1,19 @@
+nav{
+    height: 12vh;
+    background-color: rgba(0, 0, 0, 0.687) ;
+    width: 100%;
+    
+}
+.logo-empresa{
+    height: 100%;
+    width: 10%;
+    margin-left: 5rem;
+   
+}
+.offcanvas{
+    width: 80%;
+}
+.offcanvas-body{
+    width: 90%;
+    justify-content: center;
+}

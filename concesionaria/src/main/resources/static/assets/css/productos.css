@@ -1,0 +1,20 @@
+@import url(./elementos/nav.css);
+@import url(./elementos/footer.css);
+header{
+    height: 35vh;
+    background-image: url("https://i.blogs.es/eae00f/nissan_versa_portada_1/1366_2000.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo-productos{
+    font-size: 5rem;
+    color: white;
+    -webkit-text-stroke: black 1px;
+    -webkit-box-reflect: below -25px  -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255, 255, 255, 0.664)));
+}
+main{
+    min-height: 100vh;
+}
