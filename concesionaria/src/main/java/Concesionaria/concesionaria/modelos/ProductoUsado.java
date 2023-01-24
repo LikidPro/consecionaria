@@ -2,12 +2,11 @@ package Concesionaria.concesionaria.modelos;
 
 import org.hibernate.annotations.GenericGenerator;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 public class ProductoUsado {
@@ -18,13 +17,15 @@ public class ProductoUsado {
      private String marca, modelo, descripcion, color;
      private long kilometros;
      private int año;
+    @ElementCollection
+    @Column (name = "links_fotos", length = 2000)
      private List<String> fotos = new ArrayList<>();
      private EstadoDeUsado estado;
 
     public ProductoUsado() {
     }
 
-    public ProductoUsado(String marca, String modelo, String descripcion, String color, long kilometros, int año, ArrayList fotos, EstadoDeUsado estado) {
+    public ProductoUsado(String marca, String modelo, String descripcion, String color, long kilometros, int año, List<String> fotos, EstadoDeUsado estado) {
         this.marca = marca;
         this.modelo = modelo;
         this.descripcion = descripcion;

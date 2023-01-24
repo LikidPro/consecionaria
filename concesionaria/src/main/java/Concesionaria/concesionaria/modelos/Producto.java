@@ -26,9 +26,14 @@ public class Producto {
     @ElementCollection
     @Column (name = "links_fotos", length = 2000)
     private List<String> fotos1 = new ArrayList<>();
-
+    @ElementCollection
+    @Column (name = "links_fotos2", length = 2000)
     private List<String> fotos2 = new ArrayList<>();
+    @ElementCollection
+    @Column (name = "links_fotos3", length = 2000)
     private List<String> fotos3 = new ArrayList<>();
+    @ElementCollection
+    @Column (name = "links_fotos4", length = 2000)
     private List<String> fotos4 = new ArrayList<>();
 
 //error

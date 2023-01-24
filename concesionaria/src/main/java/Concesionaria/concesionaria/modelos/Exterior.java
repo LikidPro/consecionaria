@@ -3,7 +3,7 @@ package Concesionaria.concesionaria.modelos;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-
+@Entity
 public class Exterior {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
