@@ -1,16 +1,9 @@
 @import url(./elementos/nav.css);
 @import url(./elementos/footer.css);
 @import url(./elementos/tarjetas.css);
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-   /*  border: solid 1px red; */
-}
 header{
     height: 35vh;
-    background-image: url("https://i.blogs.es/eae00f/nissan_versa_portada_1/1366_2000.jpg");
+    background-image: url("https://www.paraautos.website/wp-content/uploads/2019/09/Chevy-clasico-1024x618.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -22,8 +15,4 @@ header{
     color: white;
     -webkit-text-stroke: black 1px;
     -webkit-box-reflect: below -25px  -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255, 255, 255, 0.664)));
-}
-main{
-   
-    
 }
