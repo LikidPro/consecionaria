@@ -1,8 +1,6 @@
 package Concesionaria.concesionaria.services.implement;
 
-import Concesionaria.concesionaria.DTO.ProductoDTO;
-import Concesionaria.concesionaria.DTO.ProductoUsadoDTO;
-import Concesionaria.concesionaria.repositorios.ProductosRepositorio;
+import Concesionaria.concesionaria.DTOS.ProductoUsadoDTO;
 import Concesionaria.concesionaria.repositorios.ProductosUsadosRepositorio;
 import Concesionaria.concesionaria.services.ProductosUsadosServicio;
 import org.springframework.beans.factory.annotation.Autowired;

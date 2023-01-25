@@ -1,6 +1,6 @@
-package Concesionaria.concesionaria.controllers;
+package Concesionaria.concesionaria.controladores;
 
-import Concesionaria.concesionaria.DTO.ProductoDTO;
+import Concesionaria.concesionaria.DTOS.ProductoDTO;
 import Concesionaria.concesionaria.services.ProductosServicio;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

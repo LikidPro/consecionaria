@@ -1,11 +1,6 @@
-package Concesionaria.concesionaria.DTO;
+package Concesionaria.concesionaria.DTOS;
 
 import Concesionaria.concesionaria.modelos.Exterior;
-import Concesionaria.concesionaria.modelos.Producto;
-
-import javax.persistence.FetchType;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
 
 public class ExteriorDTO {
     private long id;

@@ -1,10 +1,8 @@
-package Concesionaria.concesionaria.DTO;
+package Concesionaria.concesionaria.DTOS;
 
 import Concesionaria.concesionaria.modelos.EstadoDeUsado;
 import Concesionaria.concesionaria.modelos.ProductoUsado;
 
-import javax.persistence.Column;
-import javax.persistence.ElementCollection;
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,18 +1,11 @@
-package Concesionaria.concesionaria.DTO;
+package Concesionaria.concesionaria.DTOS;
 
-import Concesionaria.concesionaria.modelos.Exterior;
-import Concesionaria.concesionaria.modelos.Interior;
 import Concesionaria.concesionaria.modelos.Producto;
-import Concesionaria.concesionaria.modelos.Técnico;
 import Concesionaria.concesionaria.repositorios.ExteriorRepositorio;
 import Concesionaria.concesionaria.repositorios.InteriorRepositorio;
 import Concesionaria.concesionaria.repositorios.TécnicoRepositorio;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import javax.persistence.Column;
-import javax.persistence.ElementCollection;
-import javax.persistence.FetchType;
-import javax.persistence.OneToOne;
 import java.util.ArrayList;
 import java.util.List;
 

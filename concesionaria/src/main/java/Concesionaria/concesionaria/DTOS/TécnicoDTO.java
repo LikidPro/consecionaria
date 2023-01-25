@@ -1,4 +1,4 @@
-package Concesionaria.concesionaria.DTO;
+package Concesionaria.concesionaria.DTOS;
 
 import Concesionaria.concesionaria.modelos.Tracción;
 import Concesionaria.concesionaria.modelos.Técnico;

@@ -1,6 +1,6 @@
 package Concesionaria.concesionaria.services;
 
-import Concesionaria.concesionaria.DTO.ProductoDTO;
+import Concesionaria.concesionaria.DTOS.ProductoDTO;
 
 import java.util.List;
 
