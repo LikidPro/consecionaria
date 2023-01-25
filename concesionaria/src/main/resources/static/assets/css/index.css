@@ -161,12 +161,14 @@ header{
 }
 .links-paginas-circulo p{
   margin-top: 20px;
-  background-color: #000000d4;
+  background-color: #000000a1;
   border-radius: 1rem;
   padding: 8px;
   font-size: 1.5rem;
   font-weight: bolder;
   color: white;
+  /* width: 360px;
+  height: 160px; */
 }
 .btn-config {
     position: fixed;
@@ -892,9 +894,7 @@ header{
      
   }
   @media screen and (max-width:1630px){
-    #seccion-uno{
-      height: 70vh;
-    }
+  
    
    .btn-con-link{
       padding: 0;
@@ -913,9 +913,7 @@ header{
     /* .div-seccion-uno:hover .links-paginas-circulo{
       transform: translateY(5%);
     } */
-    .links-paginas-circulo{
-      bottom: 0%;
-    }
+   
    
 
   }
@@ -961,6 +959,9 @@ header{
     z-index: 4;
  
   } 
+  .links-paginas-circulo{
+    bottom: 0%;
+  }
   
  }
  @media screen and (max-width:800px){
@@ -991,6 +992,9 @@ header{
 }
 .links-paginas-circulo p{
 font-size: 1rem;
+/* width: 230px;
+height: 160px; */
+
 }
 .div-titulos-carrusel{
   width: 65%;
