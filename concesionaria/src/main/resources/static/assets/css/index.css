@@ -947,6 +947,14 @@ header{
       justify-content: flex-start;
       padding-bottom: 40px;
     }
+    .div-seccion-uno {
+      height: 250px;
+      width: 250px;
+     
+  }
+  .links-paginas-circulo p{
+    font-size: 1rem;
+   }
    
   
   .div-links-sticky{
