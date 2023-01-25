@@ -141,20 +141,23 @@ header{
 .links-paginas-circulo{
   position: relative;
   display: flex;
+  bottom: -60%;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
-  z-index: -2;
+/*   z-index: -2; */
   text-decoration: none;
+/*   transform: translateY(64%) !important;
+  transition: 2s !important; */
+ 
 
 }
 
 .div-seccion-uno:hover .links-paginas-circulo{
- 
+
   z-index: 15;
-  transform: translateY(64%);
-  transition: .6s;
+ 
 }
 .links-paginas-circulo p{
   margin-top: 20px;
@@ -907,8 +910,11 @@ header{
     .div-seccion-uno{
       margin-top: 3rem;
     }
-    .div-seccion-uno:hover .links-paginas-circulo{
+    /* .div-seccion-uno:hover .links-paginas-circulo{
       transform: translateY(5%);
+    } */
+    .links-paginas-circulo{
+      bottom: 0%;
     }
    
 
@@ -976,6 +982,12 @@ header{
 
   gap: 1rem;
 
+}
+.div-titulos-carrusel{
+  width: 65%;
+}
+.div-titulos-carrusel h5{
+  font-size: 2rem !important; 
 }
  }
  @media screen and (max-width:580px){
