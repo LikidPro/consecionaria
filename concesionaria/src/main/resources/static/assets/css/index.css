@@ -947,14 +947,7 @@ header{
       justify-content: flex-start;
       padding-bottom: 40px;
     }
-    .div-seccion-uno {
-      height: 250px;
-      width: 250px;
-     
-  }
-  .links-paginas-circulo p{
-    font-size: 1rem;
-   }
+   
    
   
   .div-links-sticky{
@@ -991,12 +984,21 @@ header{
   gap: 1rem;
 
 }
+.div-seccion-uno {
+  height: 250px;
+  width: 250px;
+ 
+}
+.links-paginas-circulo p{
+font-size: 1rem;
+}
 .div-titulos-carrusel{
   width: 65%;
 }
 .div-titulos-carrusel h5{
   font-size: 2rem !important; 
 }
+
  }
  @media screen and (max-width:580px){
 
