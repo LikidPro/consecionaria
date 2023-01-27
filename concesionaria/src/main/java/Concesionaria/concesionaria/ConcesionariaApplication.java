@@ -38,14 +38,14 @@ public class ConcesionariaApplication {
 			productosUsadosRepositorio.save(productoU7);
 			productosUsadosRepositorio.save(productoU8);
 //			Creando Productos nuevos
-			Producto producto = new Producto("Ford","Mondeo SEL","Nafta","4 en linea",5,6,4,2023,true);
-			Producto producto2 = new Producto("Ford","Territory SEL","Nafta","4",5,8,4,2023,true);
-			Producto producto3 = new Producto("Ford","Kuga Hibrida SE","Nafta","4 en linea",5,6,4,2023,true);
-			Producto producto4 = new Producto("Citroen","SUV C4 CACTUS","Nafta","3cm",5,5,4,2023,true);
-			Producto producto5 = new Producto("Citroen","C3","Nafta","3cm",5,6,4,2023,true);
-			Producto producto6 = new Producto("Renault","LOGAN","Nafta","3cm",5,5,2,2023,true);
-			Producto producto7 = new Producto("Renault","SANDERO","Nafta","4 en linea",5,5,2,2023,true);
-			Producto producto8 = new Producto("Renault","CAPTUR","Nafta","cm3",5,6,4,2023,true);
+			Producto producto = new Producto("Ford","Mondeo SEL","Nafta","4 en linea",5,6,4,2023,true,"https://ciroautomotores.com.ar/images/FORD-FOTOS/MONDEO/far-mondeo-2019-galeria-ext-overlay-5.jpg");
+			Producto producto2 = new Producto("Ford","Territory SEL","Nafta","4",5,8,4,2023,true,"https://media.lacapital.com.ar/p/a2f67730d50b1789d54073bf4e2e57a1/adjuntos/204/imagenes/030/706/0030706375/territoryjpg.jpg");
+			Producto producto3 = new Producto("Ford","Kuga Hibrida SE","Nafta","4 en linea",5,6,4,2023,true,"https://blog.karvi.com.ar/wp-content/uploads/2021/01/Kuga-Titanium.jpg");
+			Producto producto4 = new Producto("Citroen","SUV C4 CACTUS","Nafta","3cm",5,5,4,2023,true,"https://i.imgur.com/Gi5JAXw.jpg");
+			Producto producto5 = new Producto("Citroen","C3","Nafta","3cm",5,6,4,2023,true,"https://wallpapercave.com/wp/wp4246479.jpg");
+			Producto producto6 = new Producto("Renault","LOGAN","Nafta","3cm",5,5,2,2023,true,"https://i0.wp.com/www.autodestaque.net.br/wp-content/uploads/2020/01/1-27-scaled.jpg?fit=2560%2C1707");
+			Producto producto7 = new Producto("Renault","SANDERO","Nafta","4 en linea",5,5,2,2023,true,"https://pro2-bar-s3-cdn-cf.myportfolio.com/6c07a1f48d28722680da023616317203/1c193c7b5772668c9f46c88b5084f21721a412be1ccf247dfc3b68068b146a1e6fee77a8fcab8b15_rw_3840.jpg?h=09dacbe0dc5b8f85815dc03136e188db");
+			Producto producto8 = new Producto("Renault","CAPTUR","Nafta","cm3",5,6,4,2023,true,"https://fotos.perfil.com/2019/07/04/trim/1280/720/nuevo-renault-captur-749518.jpg");
 			productosRepositorio.save(producto);
 			productosRepositorio.save(producto2);
 			productosRepositorio.save(producto3);
@@ -130,44 +130,44 @@ public class ConcesionariaApplication {
 			técnicoRepositorio.save(técnico7);
 			técnicoRepositorio.save(técnico8);
 //			Colores producto
-			ColorDeProducto colorDeProducto = new ColorDeProducto("Negro",new ArrayList<>(List.of("https://i.imgur.com/UpkHDHB.png")));
-			ColorDeProducto colorDeProducto2 = new ColorDeProducto("Blanco",new ArrayList<>(List.of("https://i.imgur.com/cP8x70z.png")));
-			ColorDeProducto colorDeProducto3 = new ColorDeProducto("Negro",new ArrayList<>(List.of("https://i.imgur.com/Hf7bdrJ.png")));
+			ColorDeProducto colorDeProducto = new ColorDeProducto("#171616",new ArrayList<>(List.of("https://i.imgur.com/UpkHDHB.png")));
+			ColorDeProducto colorDeProducto2 = new ColorDeProducto("#f6f4f4",new ArrayList<>(List.of("https://i.imgur.com/cP8x70z.png")));
+			ColorDeProducto colorDeProducto3 = new ColorDeProducto("#9a9a9a",new ArrayList<>(List.of("https://i.imgur.com/Hf7bdrJ.png")));
 			producto.añadirColor(colorDeProducto);
 			producto.añadirColor(colorDeProducto2);
 			producto.añadirColor(colorDeProducto3);
 //          Colores producto2
-			ColorDeProducto colorDeProducto4 = new ColorDeProducto("Blanco",new ArrayList<>(List.of("https://lirp.cdn-website.com/3d61df13/dms3rep/multi/opt/unnamed-1920w.png")));
-			ColorDeProducto colorDeProducto5 = new ColorDeProducto("Marron",new ArrayList<>(List.of("https://irp-cdn.multiscreensite.com/eec27d45/dms3rep/multi/-Ford+Territory+SEL.webp")));
+			ColorDeProducto colorDeProducto4 = new ColorDeProducto("#f6f4f4",new ArrayList<>(List.of("https://lirp.cdn-website.com/3d61df13/dms3rep/multi/opt/unnamed-1920w.png")));
+			ColorDeProducto colorDeProducto5 = new ColorDeProducto("#523316",new ArrayList<>(List.of("https://irp-cdn.multiscreensite.com/eec27d45/dms3rep/multi/-Ford+Territory+SEL.webp")));
 			producto2.añadirColor(colorDeProducto4);
 			producto2.añadirColor(colorDeProducto5);
 //			colores producto3
-			ColorDeProducto colorDeProducto6 = new ColorDeProducto("Blanco",new ArrayList<>(List.of("https://www.electrifying.com/files/Mn9iK-kcSlBTQuVF/Kuga900.png")));
-			ColorDeProducto colorDeProducto7 = new ColorDeProducto("Azul",new ArrayList<>(List.of("https://i.imgur.com/IXyHSvp.png")));
+			ColorDeProducto colorDeProducto6 = new ColorDeProducto("#f6f4f4",new ArrayList<>(List.of("https://www.electrifying.com/files/Mn9iK-kcSlBTQuVF/Kuga900.png")));
+			ColorDeProducto colorDeProducto7 = new ColorDeProducto("#12146b",new ArrayList<>(List.of("https://i.imgur.com/IXyHSvp.png")));
 //			ColorDeProducto colorDeProducto8 = new ColorDeProducto("Negro",new ArrayList<>(List.of("https://www.ford.com.ar/content/dam/Ford/website-assets/latam/ar/nameplate/kuga-hibrido/2021/colorizer/negro-pantera/far-kuga-hib-colores-negro-pantera.jpg.dam.full.high.jpg/1637073340526.jpg")));
 			producto3.añadirColor(colorDeProducto6);
 			producto3.añadirColor(colorDeProducto7);
 //			producto3.añadirColor(colorDeProducto8);
 //			Colores producto4
-			ColorDeProducto colorDeProducto9 = new ColorDeProducto("Blanco",new ArrayList<>(List.of("https://i.imgur.com/ITQYjQn.png")));
-			ColorDeProducto colorDeProducto10 = new ColorDeProducto("Plata",new ArrayList<>(List.of("https://i.imgur.com/KQ6AaH7.png")));
+			ColorDeProducto colorDeProducto9 = new ColorDeProducto("#f6f4f4",new ArrayList<>(List.of("https://i.imgur.com/ITQYjQn.png")));
+			ColorDeProducto colorDeProducto10 = new ColorDeProducto("#9a9a9a",new ArrayList<>(List.of("https://i.imgur.com/KQ6AaH7.png")));
 			producto4.añadirColor(colorDeProducto9);
 			producto4.añadirColor(colorDeProducto10);
 //			Colores producto5
-			ColorDeProducto colorDeProducto11 = new ColorDeProducto("Blanco",new ArrayList<>(List.of("https://i.imgur.com/lGw02nf.png")));
-			ColorDeProducto colorDeProducto12 = new ColorDeProducto("Plata",new ArrayList<>(List.of("https://i.imgur.com/xD8vKCG.png")));
+			ColorDeProducto colorDeProducto11 = new ColorDeProducto("#f6f4f4",new ArrayList<>(List.of("https://i.imgur.com/lGw02nf.png")));
+			ColorDeProducto colorDeProducto12 = new ColorDeProducto("#9a9a9a",new ArrayList<>(List.of("https://i.imgur.com/xD8vKCG.png")));
 			producto5.añadirColor(colorDeProducto11);
 			producto5.añadirColor(colorDeProducto12);
 //          Colores producto6
-			ColorDeProducto colorDeProducto13 = new ColorDeProducto("Blanco",new ArrayList<>(List.of("https://i.imgur.com/auVkki9.png")));
+			ColorDeProducto colorDeProducto13 = new ColorDeProducto("#f6f4f4",new ArrayList<>(List.of("https://i.imgur.com/auVkki9.png")));
 			producto6.añadirColor(colorDeProducto13);
 //			colores producto7
-			ColorDeProducto colorDeProducto14 = new ColorDeProducto("Azul",new ArrayList<>(List.of("https://i.imgur.com/xYBLtMy.png")));
-			ColorDeProducto colorDeProducto15 = new ColorDeProducto("Rojo",new ArrayList<>(List.of("https://i.imgur.com/gbhdmY6.png")));
+			ColorDeProducto colorDeProducto14 = new ColorDeProducto("#12146b",new ArrayList<>(List.of("https://i.imgur.com/mmsYh1g.png")));
+			ColorDeProducto colorDeProducto15 = new ColorDeProducto("#a91717",new ArrayList<>(List.of("https://i.imgur.com/gbhdmY6.png")));
 			producto7.añadirColor(colorDeProducto14);
 			producto7.añadirColor(colorDeProducto15);
 //			colores producto 8
-			ColorDeProducto colorDeProducto16 = new ColorDeProducto("Naranja",new ArrayList<>(List.of("https://i.imgur.com/NAFkBRC.png")));
+			ColorDeProducto colorDeProducto16 = new ColorDeProducto("#ff6200",new ArrayList<>(List.of("https://i.imgur.com/NAFkBRC.png")));
 			producto8.añadirColor(colorDeProducto16);
 			colorDeProductoRepositorio.save(colorDeProducto);
 			colorDeProductoRepositorio.save(colorDeProducto2);

@@ -24,6 +24,8 @@ public class Producto {
     private int airbags;
     private int año;
     private boolean camaraReversa;
+
+    private String fondoDetalle;
     @OneToMany(mappedBy="producto", fetch= FetchType.EAGER)
     private Set<ColorDeProducto> colorDeProductos = new HashSet<>();
 
@@ -52,7 +54,7 @@ public class Producto {
     public Producto() {
     }
 
-    public Producto(String marca, String modelo, String tipoMotor, String cilindrada, int puertas, int velocidades, int airbags, int año, boolean camaraReversa) {
+    public Producto(String marca, String modelo, String tipoMotor, String cilindrada, int puertas, int velocidades, int airbags, int año, boolean camaraReversa,String fondoDetalle) {
         this.marca = marca;
         this.modelo = modelo;
         this.tipoMotor = tipoMotor;
@@ -62,6 +64,7 @@ public class Producto {
         this.airbags = airbags;
         this.año = año;
         this.camaraReversa = camaraReversa;
+        this.fondoDetalle = fondoDetalle;
     }
 
     public long getId() {
@@ -208,6 +211,15 @@ public class Producto {
     public void setTécnico(Técnico técnico) {
         this.técnico = técnico;
     }
+
+    public String getFondoDetalle() {
+        return fondoDetalle;
+    }
+
+    public void setFondoDetalle(String fondoDetalle) {
+        this.fondoDetalle = fondoDetalle;
+    }
+
     public void añadirExterior(Exterior exterior){
         exterior.setProducto(this);
         this.exterior = exterior;

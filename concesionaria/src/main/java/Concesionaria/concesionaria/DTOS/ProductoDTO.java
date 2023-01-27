@@ -35,6 +35,8 @@ public class ProductoDTO {
 
     private Set<ColoresDeProductoDTO> colorDeProductos;
 
+    private String fondoDetalle;
+
 //    private List<String> fotos1 = new ArrayList<>();
 //
 //    private List<String> fotos2 = new ArrayList<>();
@@ -60,6 +62,7 @@ public class ProductoDTO {
         this.airbags = producto.getAirbags();
         this.año = producto.getAño();
         this.camaraReversa = producto.isCamaraReversa();
+        this.fondoDetalle= producto.getFondoDetalle();
         this.colorDeProductos = producto.getColorDeProductos().stream().map(colorDeProducto -> new ColoresDeProductoDTO(colorDeProducto)).collect(Collectors.toSet());
         this.interior = new InteriorDTO(producto.getInterior()) ;
         this.exterior = new ExteriorDTO(producto.getExterior()) ;
@@ -134,6 +137,10 @@ public class ProductoDTO {
 //        return fotos4;
 //    }
 
+
+    public String getFondoDetalle() {
+        return fondoDetalle;
+    }
 
     public Set<ColoresDeProductoDTO> getColorDeProductos() {
         return colorDeProductos;
