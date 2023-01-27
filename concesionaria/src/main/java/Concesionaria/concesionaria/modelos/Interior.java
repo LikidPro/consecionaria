@@ -3,6 +3,8 @@ package Concesionaria.concesionaria.modelos;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.List;
+
 @Entity
 public class Interior {
     @Id
@@ -17,6 +19,10 @@ public class Interior {
     private boolean radio;
     private boolean calefaccion;
     private boolean aireAcondicionado;
+
+    @ElementCollection
+    @Column(name = "fotos")
+    private List<String>fotos;
     @OneToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "producto_id")
     private Producto producto;
@@ -24,7 +30,7 @@ public class Interior {
     public Interior() {
     }
 
-    public Interior(TapizadoAsiento tapizadoAsiento, boolean levantaVidrioElectricoDelantero, boolean levantaVidrioElectricoTrasero, boolean trabaParaNiños, boolean luzInterior, boolean radio, boolean calefaccion, boolean aireAcondicionado) {
+    public Interior(TapizadoAsiento tapizadoAsiento, boolean levantaVidrioElectricoDelantero, boolean levantaVidrioElectricoTrasero, boolean trabaParaNiños, boolean luzInterior, boolean radio, boolean calefaccion, boolean aireAcondicionado, List<String> fotos) {
         this.tapizadoAsiento = tapizadoAsiento;
         this.levantaVidrioElectricoDelantero = levantaVidrioElectricoDelantero;
         this.levantaVidrioElectricoTrasero = levantaVidrioElectricoTrasero;
@@ -33,10 +39,24 @@ public class Interior {
         this.radio = radio;
         this.calefaccion = calefaccion;
         this.aireAcondicionado = aireAcondicionado;
+        this.fotos = fotos;
+
     }
 
     public long getId() {
         return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public List<String> getFotos() {
+        return fotos;
+    }
+
+    public void setFotos(List<String> fotos) {
+        this.fotos = fotos;
     }
 
     public TapizadoAsiento getTapizadoAsiento() {

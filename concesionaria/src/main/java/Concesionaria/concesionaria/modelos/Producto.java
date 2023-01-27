@@ -4,7 +4,9 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 public class Producto {
@@ -22,19 +24,21 @@ public class Producto {
     private int airbags;
     private int año;
     private boolean camaraReversa;
+    @OneToMany(mappedBy="producto", fetch= FetchType.EAGER)
+    private Set<ColorDeProducto> colorDeProductos = new HashSet<>();
 
-    @ElementCollection
-    @Column (name = "links_fotos", length = 2000)
-    private List<String> fotos1 = new ArrayList<>();
-    @ElementCollection
-    @Column (name = "links_fotos2", length = 2000)
-    private List<String> fotos2 = new ArrayList<>();
-    @ElementCollection
-    @Column (name = "links_fotos3", length = 2000)
-    private List<String> fotos3 = new ArrayList<>();
-    @ElementCollection
-    @Column (name = "links_fotos4", length = 2000)
-    private List<String> fotos4 = new ArrayList<>();
+//    @ElementCollection
+//    @Column (name = "links_fotos", length = 2000)
+//    private List<String> fotos1 = new ArrayList<>();
+//    @ElementCollection
+//    @Column (name = "links_fotos2", length = 2000)
+//    private List<String> fotos2 = new ArrayList<>();
+//    @ElementCollection
+//    @Column (name = "links_fotos3", length = 2000)
+//    private List<String> fotos3 = new ArrayList<>();
+//    @ElementCollection
+//    @Column (name = "links_fotos4", length = 2000)
+//    private List<String> fotos4 = new ArrayList<>();
 
 //error
     @OneToOne(mappedBy = "producto", fetch = FetchType.EAGER)
@@ -140,36 +144,45 @@ public class Producto {
         this.camaraReversa = camaraReversa;
     }
 
-    public List<String> getFotos1() {
-        return fotos1;
+//    public List<String> getFotos1() {
+//        return fotos1;
+//    }
+//
+//    public void setFotos1(List<String> fotos1) {
+//        this.fotos1 = fotos1;
+//    }
+//
+//    public List<String> getFotos2() {
+//        return fotos2;
+//    }
+//
+//    public void setFotos2(List<String> fotos2) {
+//        this.fotos2 = fotos2;
+//    }
+//
+//    public List<String> getFotos3() {
+//        return fotos3;
+//    }
+//
+//    public void setFotos3(List<String> fotos3) {
+//        this.fotos3 = fotos3;
+//    }
+//
+//    public List<String> getFotos4() {
+//        return fotos4;
+//    }
+//
+//    public void setFotos4(List<String> fotos4) {
+//        this.fotos4 = fotos4;
+//    }
+
+
+    public Set<ColorDeProducto> getColorDeProductos() {
+        return colorDeProductos;
     }
 
-    public void setFotos1(List<String> fotos1) {
-        this.fotos1 = fotos1;
-    }
-
-    public List<String> getFotos2() {
-        return fotos2;
-    }
-
-    public void setFotos2(List<String> fotos2) {
-        this.fotos2 = fotos2;
-    }
-
-    public List<String> getFotos3() {
-        return fotos3;
-    }
-
-    public void setFotos3(List<String> fotos3) {
-        this.fotos3 = fotos3;
-    }
-
-    public List<String> getFotos4() {
-        return fotos4;
-    }
-
-    public void setFotos4(List<String> fotos4) {
-        this.fotos4 = fotos4;
+    public void setColorDeProductos(Set<ColorDeProducto> colorDeProductos) {
+        this.colorDeProductos = colorDeProductos;
     }
 
     public Interior getInterior() {
@@ -206,5 +219,9 @@ public class Producto {
     public void  añadirTécnico ( Técnico técnico){
         técnico.setProducto(this);
         this.técnico = técnico;
+    }
+    public void  añadirColor ( ColorDeProducto colorDeProducto){
+        colorDeProducto.setProducto(this);
+        this.colorDeProductos.add(colorDeProducto);
     }
 }

@@ -26,11 +26,9 @@ public class Técnico {
     public Técnico() {
     }
 
-    public Técnico(int pasajeros, int tanqueCombustible, int puertas, int cilindros, String motor, int peso, Tracción tracción, int velocidades, int valvulas) {
+    public Técnico(int pasajeros, int tanqueCombustible, String motor, int peso, Tracción tracción, int velocidades, int valvulas) {
         this.pasajeros = pasajeros;
         this.tanqueCombustible = tanqueCombustible;
-        this.puertas = puertas;
-        this.cilindros = cilindros;
         this.motor = motor;
         this.peso = peso;
         this.tracción = tracción;

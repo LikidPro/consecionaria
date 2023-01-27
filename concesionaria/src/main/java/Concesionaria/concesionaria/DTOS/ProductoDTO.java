@@ -1,5 +1,6 @@
 package Concesionaria.concesionaria.DTOS;
 
+import Concesionaria.concesionaria.modelos.ColorDeProducto;
 import Concesionaria.concesionaria.modelos.Producto;
 import Concesionaria.concesionaria.repositorios.ExteriorRepositorio;
 import Concesionaria.concesionaria.repositorios.InteriorRepositorio;
@@ -8,6 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 public class ProductoDTO {
     @Autowired
@@ -30,13 +33,15 @@ public class ProductoDTO {
     private int año;
     private boolean camaraReversa;
 
-    private List<String> fotos1 = new ArrayList<>();
+    private Set<ColoresDeProductoDTO> colorDeProductos;
 
-    private List<String> fotos2 = new ArrayList<>();
-
-    private List<String> fotos3 = new ArrayList<>();
-
-    private List<String> fotos4 = new ArrayList<>();
+//    private List<String> fotos1 = new ArrayList<>();
+//
+//    private List<String> fotos2 = new ArrayList<>();
+//
+//    private List<String> fotos3 = new ArrayList<>();
+//
+//    private List<String> fotos4 = new ArrayList<>();
 
     private InteriorDTO interior;
 
@@ -55,26 +60,23 @@ public class ProductoDTO {
         this.airbags = producto.getAirbags();
         this.año = producto.getAño();
         this.camaraReversa = producto.isCamaraReversa();
-        this.fotos1 = producto.getFotos1();
-        this.fotos2 = producto.getFotos2();
-        this.fotos3 = producto.getFotos3();
-        this.fotos4 = producto.getFotos4();
+        this.colorDeProductos = producto.getColorDeProductos().stream().map(colorDeProducto -> new ColoresDeProductoDTO(colorDeProducto)).collect(Collectors.toSet());
         this.interior = new InteriorDTO(producto.getInterior()) ;
         this.exterior = new ExteriorDTO(producto.getExterior()) ;
         this.técnico = new TécnicoDTO(producto.getTécnico());
     }
 
-    public InteriorRepositorio getInteriorRepositorio() {
-        return interiorRepositorio;
-    }
-
-    public ExteriorRepositorio getExteriorRepositorio() {
-        return exteriorRepositorio;
-    }
-
-    public TécnicoRepositorio getTécnicoRepositorio() {
-        return técnicoRepositorio;
-    }
+//    public InteriorRepositorio getInteriorRepositorio() {
+//        return interiorRepositorio;
+//    }
+//
+//    public ExteriorRepositorio getExteriorRepositorio() {
+//        return exteriorRepositorio;
+//    }
+//
+//    public TécnicoRepositorio getTécnicoRepositorio() {
+//        return técnicoRepositorio;
+//    }
 
     public long getId() {
         return id;
@@ -116,20 +118,25 @@ public class ProductoDTO {
         return camaraReversa;
     }
 
-    public List<String> getFotos1() {
-        return fotos1;
-    }
+//    public List<String> getFotos1() {
+//        return fotos1;
+//    }
+//
+//    public List<String> getFotos2() {
+//        return fotos2;
+//    }
+//
+//    public List<String> getFotos3() {
+//        return fotos3;
+//    }
+//
+//    public List<String> getFotos4() {
+//        return fotos4;
+//    }
 
-    public List<String> getFotos2() {
-        return fotos2;
-    }
 
-    public List<String> getFotos3() {
-        return fotos3;
-    }
-
-    public List<String> getFotos4() {
-        return fotos4;
+    public Set<ColoresDeProductoDTO> getColorDeProductos() {
+        return colorDeProductos;
     }
 
     public InteriorDTO getInterior() {
