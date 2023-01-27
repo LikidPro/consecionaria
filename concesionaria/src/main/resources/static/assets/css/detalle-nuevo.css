@@ -1,0 +1,32 @@
+@import url(./elementos/nav.css);
+@import url(./elementos/footer.css);
+@import url(./elementos/tarjetas.css);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: solid .1rem red;
+}
+main{
+    height: 100vh;
+}
+.contenedor-grande{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  
+}
+.img-detalle-grande{
+    height: 40vh;
+    width: 40%;
+}
+.contenedor-cards{
+    justify-content: space-between !important;
+}
+.espacio-nav{
+    height: 12vh;
+    background-image: url("https://www.escobarford.com.ar/_red/_ford/images/kuga/banner1.jpg");
+    background-position: center;
+    background-size: cover;
+}

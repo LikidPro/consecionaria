@@ -55,6 +55,7 @@
     color: black;
     z-index: 1;
     right: 2;
+    text-decoration: none;
    }
    
    .button:before {
