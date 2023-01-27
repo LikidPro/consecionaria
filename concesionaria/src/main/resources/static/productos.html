@@ -55,10 +55,26 @@
         <h1 class="titulo-productos">Tu 0KM</h1>
     </header>
     
-    <main>
+    <main id="app">
       <div class="contenedor-grande">
         <div class="contenedor-cards">
-          <article class="card">
+          <article v-for="auto in arrayAutos" class="card">
+           <div class="imagen-card">
+             <img :src="auto.colorDeProductos[0].fotos[0]" alt="">
+           </div>
+           <div class="texto-card">
+             <h4>{{auto.marca}} {{auto.modelo}} </h4>
+             <ul>
+              
+               <li>Motor {{auto.técnico.motor}} </li>
+               <li>{{auto.tipoMotor}} </li>
+               <li>Traccion {{auto.técnico.tracción}} </li>
+              </ul>
+             <button class="button"> Ver más
+            </button>
+           </div>
+          </article>
+         <!--  <article class="card">
            <div class="imagen-card">
              <img src="./assets/Img/Auto2.png" alt="">
            </div>
@@ -95,18 +111,6 @@
            </div>
           </article>
           <article class="card">
-           <div class="imagen-card">
-             <img src="./assets/Img/Auto2.png" alt="">
-           </div>
-           <div class="texto-card">
-             <h4>Marca Modelo</h4>
-             <h5>Slogan numero 1</h5>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt amet veritatis deserunt quaerat doloribus saepe assumenda tempora laudantium nobis labore exercitationem, autem ullam, totam consectetur magnam eius obcaecati in. Tempore!</p>
-             <button class="button"> Ver más
-            </button>
-           </div>
-          </article>
-          <article class="card">
             <div class="imagen-card">
               <img src="./assets/Img/Auto2.png" alt="">
             </div>
@@ -201,7 +205,7 @@
               <button class="button"> Ver más
               </button>
             </div>
-           </article>
+           </article> -->
    
          </div>
       </div>

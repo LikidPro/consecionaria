@@ -3,7 +3,7 @@ const { createApp } = Vue
 createApp({
   data() {
     return {
-        url:"/api/productosusados",
+        url:"/api/productos",
         arrayAutos:[],
 
 
@@ -19,6 +19,7 @@ createApp({
         axios.get(url)
          .then(response => {
             this.arrayAutos = response.data
+            console.log(this.arrayAutos);
             
          })
 

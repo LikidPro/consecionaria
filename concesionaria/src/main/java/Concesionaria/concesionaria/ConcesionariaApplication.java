@@ -130,24 +130,24 @@ public class ConcesionariaApplication {
 			técnicoRepositorio.save(técnico7);
 			técnicoRepositorio.save(técnico8);
 //			Colores producto
-			ColorDeProducto colorDeProducto = new ColorDeProducto("Negro",new ArrayList<>(List.of("https://i.imgur.com/aPHNXVY.png")));
+			ColorDeProducto colorDeProducto = new ColorDeProducto("Negro",new ArrayList<>(List.of("https://i.imgur.com/UpkHDHB.png")));
 			ColorDeProducto colorDeProducto2 = new ColorDeProducto("Blanco",new ArrayList<>(List.of("https://i.imgur.com/cP8x70z.png")));
 			ColorDeProducto colorDeProducto3 = new ColorDeProducto("Negro",new ArrayList<>(List.of("https://i.imgur.com/Hf7bdrJ.png")));
 			producto.añadirColor(colorDeProducto);
 			producto.añadirColor(colorDeProducto2);
 			producto.añadirColor(colorDeProducto3);
 //          Colores producto2
-			ColorDeProducto colorDeProducto4 = new ColorDeProducto("Blanco",new ArrayList<>(List.of("https://www.ford.com.ar/content/dam/Ford/website-assets/latam/ar/nameplate/territory/models/territory-sel/colorizer/blanco-oxford/far-territory-colorizer-sel-blanco-oxford.jpg.dam.full.high.jpg/1660240460573.jpg")));
+			ColorDeProducto colorDeProducto4 = new ColorDeProducto("Blanco",new ArrayList<>(List.of("https://lirp.cdn-website.com/3d61df13/dms3rep/multi/opt/unnamed-1920w.png")));
 			ColorDeProducto colorDeProducto5 = new ColorDeProducto("Marron",new ArrayList<>(List.of("https://irp-cdn.multiscreensite.com/eec27d45/dms3rep/multi/-Ford+Territory+SEL.webp")));
 			producto2.añadirColor(colorDeProducto4);
 			producto2.añadirColor(colorDeProducto5);
 //			colores producto3
-			ColorDeProducto colorDeProducto6 = new ColorDeProducto("Blanco",new ArrayList<>(List.of("https://www.ford.com.ar/content/dam/Ford/website-assets/latam/ar/nameplate/kuga-hibrido/2021/colorizer/blanco-oxford/far-kuga-hib-colores-blanco-oxford.jpg.dam.full.high.jpg/1637074134393.jpg")));
-			ColorDeProducto colorDeProducto7 = new ColorDeProducto("Plata",new ArrayList<>(List.of("https://www.ford.com.ar/content/dam/Ford/website-assets/latam/ar/nameplate/kuga-hibrido/2021/colorizer/plata-lunar/far-kuga-hib-colores-plata-lunar.jpg.dam.full.high.jpg/1637073340645.jpg")));
-			ColorDeProducto colorDeProducto8 = new ColorDeProducto("Negro",new ArrayList<>(List.of("https://www.ford.com.ar/content/dam/Ford/website-assets/latam/ar/nameplate/kuga-hibrido/2021/colorizer/negro-pantera/far-kuga-hib-colores-negro-pantera.jpg.dam.full.high.jpg/1637073340526.jpg")));
+			ColorDeProducto colorDeProducto6 = new ColorDeProducto("Blanco",new ArrayList<>(List.of("https://www.electrifying.com/files/Mn9iK-kcSlBTQuVF/Kuga900.png")));
+			ColorDeProducto colorDeProducto7 = new ColorDeProducto("Azul",new ArrayList<>(List.of("https://i.imgur.com/IXyHSvp.png")));
+//			ColorDeProducto colorDeProducto8 = new ColorDeProducto("Negro",new ArrayList<>(List.of("https://www.ford.com.ar/content/dam/Ford/website-assets/latam/ar/nameplate/kuga-hibrido/2021/colorizer/negro-pantera/far-kuga-hib-colores-negro-pantera.jpg.dam.full.high.jpg/1637073340526.jpg")));
 			producto3.añadirColor(colorDeProducto6);
 			producto3.añadirColor(colorDeProducto7);
-			producto3.añadirColor(colorDeProducto8);
+//			producto3.añadirColor(colorDeProducto8);
 //			Colores producto4
 			ColorDeProducto colorDeProducto9 = new ColorDeProducto("Blanco",new ArrayList<>(List.of("https://i.imgur.com/ITQYjQn.png")));
 			ColorDeProducto colorDeProducto10 = new ColorDeProducto("Plata",new ArrayList<>(List.of("https://i.imgur.com/KQ6AaH7.png")));
@@ -167,7 +167,7 @@ public class ConcesionariaApplication {
 			producto7.añadirColor(colorDeProducto14);
 			producto7.añadirColor(colorDeProducto15);
 //			colores producto 8
-			ColorDeProducto colorDeProducto16 = new ColorDeProducto("Azul",new ArrayList<>(List.of("https://i.imgur.com/v2I6bSf.png")));
+			ColorDeProducto colorDeProducto16 = new ColorDeProducto("Naranja",new ArrayList<>(List.of("https://i.imgur.com/NAFkBRC.png")));
 			producto8.añadirColor(colorDeProducto16);
 			colorDeProductoRepositorio.save(colorDeProducto);
 			colorDeProductoRepositorio.save(colorDeProducto2);
@@ -176,7 +176,7 @@ public class ConcesionariaApplication {
 			colorDeProductoRepositorio.save(colorDeProducto5);
 			colorDeProductoRepositorio.save(colorDeProducto6);
 			colorDeProductoRepositorio.save(colorDeProducto7);
-			colorDeProductoRepositorio.save(colorDeProducto8);
+//			colorDeProductoRepositorio.save(colorDeProducto8);
 			colorDeProductoRepositorio.save(colorDeProducto9);
 			colorDeProductoRepositorio.save(colorDeProducto10);
 			colorDeProductoRepositorio.save(colorDeProducto11);
